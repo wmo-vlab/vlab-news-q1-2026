@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>VLab News • Q1 2026</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fa url('https://cdn.wallpapersafari.com/68/72/tRACs6.jpg') repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 24px;
+      color: #2f3a45;
+      line-height: 1.65;
+      font-size: 15px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    }
+    .header {
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.35), rgba(0, 48, 135, 0.92)),
+        url('https://wmo-sat.info/vlab/wp-content/uploads/2026/04/leo-background.png') center/cover no-repeat;
+      color: #ffffff;
+      padding: 10px 0px 10px;
+      text-align: center;
+    }
+    .header-logo {
+      display: block;
+      margin: 0 auto 24px auto;
+      max-width: 190px;
+      height: auto;
+      filter: 
+        drop-shadow(0 0 24px #ffffff) 
+        drop-shadow(0 0 48px #ffffff) 
+        drop-shadow(0 0 72px rgba(255,255,255,0.9));
+    }
+    .header h1 {
+      margin: 0 0 12px 0;
+      font-size: 34px;
+      line-height: 1.2;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+    .header p {
+      margin: 8px auto;
+      max-width: 640px;
+      font-size: 17px;
+      opacity: 0.98;
+    }
+    .edition {
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      opacity: 0.9;
+      margin-top: 10px;
+    }
+
+    .content { 
+      padding: 34px 28px 20px;   
+    }
+    .intro { font-size: 16px; color: #37424f; margin-bottom: 28px; }
+    .section {
+      margin: 0 0 26px 0;
+      padding: 22px 22px 16px;
+      background: #ffffff;
+      border: 1px solid #e4ebf3;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #003087;
+      font-size: 24px;
+      margin: 0 0 14px 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e9eef4;
+    }
+    h3 {
+      color: #0055aa;
+      font-size: 19px;
+      margin: 20px 0 8px 0;
+      padding-top: 14px;
+      border-top: 1px solid #eef2f7;
+    }
+    .section h3:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    p { margin: 0 0 14px 0; }
+    ul { margin: 0 0 14px 0; padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    .button {
+      display: inline-block;
+      background: #0066cc;
+      color: #ffffff !important;
+      text-decoration: none !important;
+      padding: 9px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      margin: 6px 8px 6px 0;
+      font-weight: bold;
+    }
+    .button:hover { background: #004f9d; }
+    .button.secondary {
+      background: #e9f2ff;
+      color: #003087 !important;
+      border: 1px solid #c7dcff;
+    }
+    .button.secondary:hover { background: #dcecff; }
+    .flag { vertical-align: middle; margin-right: 8px; border-radius: 2px; }
+    .link-group { margin: 10px 0 6px 0; }
+    .tip {
+      background: #f4f9ff;
+      border-left: 5px solid #4a90e2;
+      padding: 14px 16px;
+      border-radius: 5px;
+      margin: 16px 0 6px 0;
+    }
+    .spotlight {
+      background: #eaf3ff;
+      border-left: 6px solid #003087;
+      padding: 18px 18px 8px;
+      border-radius: 6px;
+      margin: 18px 0 12px 0;
+    }
+    .spotlight strong.title {
+      display: block;
+      font-size: 17px;
+      color: #003087;
+      margin-bottom: 10px;
+    }
+    .event-date {
+      display: inline-block;
+      background: #003087;
+      color: #ffffff;
+      padding: 4px 9px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .resources {
+      background: #f8fafc;
+      padding: 18px 18px 8px;
+      border-radius: 8px;
+      border: 1px solid #e6edf5;
+    }
+    .footer {
+      background: #f6f9fc;
+      border-top: 1px solid #e4ebf3;
+      padding: 24px 28px 34px;   
+      text-align: center;
+      font-size: 14px;
+      color: #526170;
+    }
+    .subscribe-box {
+      background: #003087;
+      color: #ffffff;
+      padding: 0px;
+      border-radius: 8px;
+      margin: 0px auto 0;
+      max-width: 620px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .subscribe-box .content {
+      flex: 1;
+    }
+    .subscribe-box .title {
+      display: block;
+      text-align: center;
+      margin-bottom: 12px;
+      font-size: 17px;
+    }
+    .subscribe-box img.logo {
+      width: 110px;
+      height: auto;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+    .subscribe-box a {
+      color: #ffffff !important;
+      text-decoration: underline;
+    }
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .social-links a {
+      color: #ffffff;
+      font-size: 32px;
+      transition: transform 0.2s;
+    }
+    .social-links a:hover {
+      transform: scale(1.15);
+    }
+    .small-note {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #7c8896;
+    }
+    .rfg-list {
+      list-style: disc;
+      padding-left: 22px;
+      margin: 0;
+    }
+    .rfg-list li { margin-bottom: 10px; }
+    .mini-link {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #f7f9fc;
+      border: 1px solid #dde6ee;
+      color: #4e647a !important;
+      text-decoration: none !important;
+      font-size: 12px;
+      line-height: 1.2;
+      vertical-align: middle;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+    .mini-link:hover { background: #eef3f8; }
+    .new-badge {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #fff3cd;
+      color: #8a5a00;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      vertical-align: middle;
+      border: 1px solid #f2d27a;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 12px; }
+      .header { padding: 50px 18px 40px; }
+      .header h1 { font-size: 28px; }
+      .header-logo { max-width: 150px; margin-bottom: 18px; }
+      .content { padding: 22px 16px 20px; }
+      .section { padding: 18px 16px 12px; }
+      .button { display: block; text-align: center; margin-right: 0; }
+      .subscribe-box { flex-direction: column; text-align: center; gap: 12px; }
+      .subscribe-box img.logo { margin: 0 auto; }
+    }
+  
+    /* Archive Bar - Fixed and restored */
+    .archive-bar {
+      max-width: 760px;
+      margin: 0 auto 12px auto;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #7c8896;
+      background: #f5f7fa;
+      border: 1px solid #e4ebf3;
+      border-radius: 8px;
+      padding: 8px 12px;
+      box-sizing: border-box;
+    }
+    .archive-bar a {
+      color: #4e647a;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="archive-bar">
+    <a href="*|ARCHIVE|*" style="" target="_blank">View this email in your browser</a>
+  </div>
+  
+  <div class="container">
+    <div class="header">
+      <img alt="VLab Logo" class="header-logo" src="https://wmo-sat.info/vlab/wp-content/uploads/2020/09/cropped-cropped-vlab_color_300dpi_small-2.png"/>
+      <h1>WMO-CGMS Virtual Laboratory News️</h1>
+      <p>Discover the latest training opportunities, innovations, and collaborations in satellite meteorology across the VLab network.</p>
+      <div class="edition">Q1 2026 Edition</div>
+    </div>
+
+    <div class="content">
+      <div class="intro">
+        <p><strong>🛰️ The WMO-CGMS Virtual Laboratory for Education and Training in Satellite Meteorology (<a href="http://vlab.wmo.int" style="color:#003087; text-decoration:underline;" target="_blank">VLab</a>)</strong> is a global network of specialized training centres collaborating with satellite operators. Its mission is to support the protection of life and property, as well as economic development, by improving weather, climate, water, and environmental services.</p>
+        <p>This is achieved through coordinated education, training, and knowledge exchange across a global network of VLab Centres of Excellence (CoEs), satellite operators, and other partners.</p>
+        <p><strong>In this edition, we share key updates from the VLab community (Q1 2026).</strong></p>
+      </div>
+
+      <div class="section">
+        <h2>🌐 Highlights from the VLab Network</h2>
+        <h3><img alt="Australia" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1e6-1f1fa.png" width="24"/>Australia CoE  (BOM)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/australia/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Continued delivery of Regional Focus Group (RFG) sessions</li>
+          <li>Migration of training resources to a new Moodle platform</li>
+          <li>Integration of AI-based forecast evaluation into activities</li>
+          <li>Collaboration with University of Wisconsin–Madison on lightning prediction tools</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQA-blxo10iXRKhF3CWeC2WWAaWYkFJIhP6BNGR6XTTFdb8?e=pu0TYN" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://youtu.be/1xz2GrcICXA" target="_blank">▶️ Watch recording</a>
+        </div>
+
+        <h3><img alt="Barbados" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1e7-1f1e7.png" width="24"/>Barbados CoE  (CIMH)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/barbados/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Ongoing severe weather forecasting programme transitioning to operational testbed (June 2026)</li>
+          <li>Development of VLab training modules on heatwaves and impact-based flooding</li>
+          <li>Integration of satellite data across training programmes (entry-level to operational)</li>
+          <li>Introduction of marine forecasting training with satellite applications</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQCWIOUojiqFTYbNVdJkZNZCAV3qPaYA8ptSklTgl3o_Fj8?e=fKqO0u" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://youtu.be/9oyfTmdR8Kc" target="_blank">▶️ Watch recording</a>
+        </div>
+
+        <h3><img alt="Brazil" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1e7-1f1f7.png" width="24"/>Brazil CoE  (INPE)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/brazil/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Planned virtual training (July 2026) on hotspot data processing and wildfire analysis</li>
+          <li>Theoretical + hands-on components (Python, Google Earth Engine)</li>
+          <li>Focus on satellite-based fire detection using multi-sensor data (GOES, JPSS, Aqua, Landsat, Sentinel)</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQC8IjIw_5C6TJcB1yYyA0DAAbQnQoopQapwAVbxl59BY0w?e=vbJj6N" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://youtu.be/EgPmR6eobwU" target="_blank">▶️ Watch recording</a>
+        </div>
+
+        <!-- China - Beijing CoE (added before Nanjing for alphabetical order) -->
+        <h3><img alt="China" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1e8-1f1f3.png" width="24"/>China – Beijing CoE  (CMATC)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/china-beijing/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Seminar on China-ASEAN Meteorological Remote Sensing, tentatively scheduled for June 2026</li>
+          <li>Seminar on the Application of Meteorological Satellite Remote Sensing Technologies in "Belt and Road" Countries, tentatively scheduled for August 2026</li>
+        </ul>
+
+        <h3><img alt="China" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1e8-1f1f3.png" width="24"/>China – Nanjing CoE  (NUIST)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/china-nanjing/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Planned seminar on remote sensing technology (September 2026)</li>
+        </ul>
+
+        <h3><img alt="Indonesia" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1ee-1f1e9.png" width="24"/>Indonesia CoE  (BMKG)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/indonesia/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Continuation of bimonthly Regional Focus Group sessions (including AI applications)</li>
+          <li>Planned online RGB satellite training (June 2026)</li>
+        </ul>
+
+        <h3><img alt="Morocco" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1f2-1f1e6.png" width="24"/>Morocco CoE  (DGM)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/morocco/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Delivery of maritime forecasting training (altimetry, scatterometry) and MTG-focused online courses</li>
+          <li>Planned development of new training modules, including multilingual resources</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQCGSshp4Y7DQqxu_AulCsI0AWOUry0kruzpqoGvTJhrAdk?e=eKyAXm" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://youtu.be/u43bSbeVgIM" target="_blank">▶️ Watch recording</a>
+        </div>
+
+        <h3><img alt="Oman" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1f4-1f1f2.png" width="24"/>Oman CoE  (CAA)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/oman/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Delivery of Satellite Application Courses (online + face-to-face) and monthly forecasting forums</li>
+          <li>Strong focus on case-based learning and practical tools (e.g. Google Earth)</li>
+          <li>Planned training topics for MENA: dust forecasting, marine meteorology, tropical systems in the Arabian Sea, and satellite data services for Arabic-speaking forecasters</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQDdLjFtHL77R6ju6iWiNJXzAYu4Ll83UQPDptTBsFUqjOY?e=fygtQC" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://youtu.be/2XAG5BuWHRE" target="_blank">▶️ Watch recording</a>
+        </div>
+
+        <h3><img alt="South Africa" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1ff-1f1e6.png" width="24"/>South Africa CoE  (SAWS)</h3>
+        <div style="margin:4px 0 8px 32px;"><a href="https://wmo-sat.info/vlab/south-africa/" style="font-size:12px;color:#6b7785;text-decoration:none;font-weight:bold;" target="_blank">🌐 Visit CoE page</a></div>
+        <ul>
+          <li>Delivery of MTG-focused satellite training and postgraduate forecasting programme</li>
+          <li>Integration of satellite imagery, lightning detection, and case-based learning</li>
+          <li>Increasing participation in regional weather briefings</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQBtShwRHBMFT4I3mUccmDHmAbyjE1_v2scJVU4akBjD55s?e=O29sBv" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://youtu.be/Lbe4_GR2GWc" target="_blank">▶️ Watch recording</a>
+        </div>
+
+        <h3><img alt="USA" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f1fa-1f1f8.png" width="24"/>CIRA / NOAA</h3>
+        <ul>
+          <li>Regular Regional Focus Group sessions with 60–80+ participants from 20+ countries</li>
+          <li>Real-time weather discussions, case study analysis, and open exchange</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQAJUxvqvSENTaDt4HQuGjXmAREcbZ3_3Rtsy2dT4iZ2DCg?e=Qxxh7c" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://youtu.be/UPRWryF-OGk" target="_blank">▶️ Watch recording</a>
+        </div>
+
+        <h3><img alt="Global" class="flag" height="24" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f310.png" width="24"/>COMET / UCAR</h3>
+        <ul>
+          <li>Development of new online training modules: smoke detection (day/night), GeoColor imagery, and proxy visible imagery</li>
+          <li>Launch of high-latitude satellite training course</li>
+          <li>Continued expansion of global training resource repository</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQBk14X8Jl5bSq9OKOWbx1r9ARppJ9QLQg6Ru0htwcsqpeA?e=Bjm5Wl" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://youtu.be/NYM3nq-29lM" target="_blank">▶️ Watch recording</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>📅 Want to Know When These Training Events Are Happening?</h2>
+        <p>The <strong>VLab Training Calendar</strong> is the central hub for discovering satellite meteorology training events from across the global VLab network.</p>
+        <p><a class="button" href="https://trainingevents.eumetsat.int/trui/" target="_blank">📅 Open VLab Training Calendar</a></p>
+        <p>Through the calendar, you can:</p>
+        <ul>
+          <li>explore upcoming courses, workshops, and webinars</li>
+          <li>access training opportunities from multiple CoEs, satellite operators, and partners</li>
+          <li>stay informed about both regional and global activities</li>
+        </ul>
+        <div class="tip">
+          <strong>💡 Tip:</strong> Events submitted to the WMO Global Campus with the <strong>“satellite”</strong> tag are automatically shared with the VLab calendar.
+        </div>
+        <ul>
+        <li>Overview of Training Calendars and How VLab Members Advertise their Training Activities:</li>
+        </ul>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQCEU4xCEoC6R4mnkCygSgeyAcgaY1DZXee1ahSCMsQbo5w" target="_blank">🔗 View slides</a>
+          <a class="button" href="https://www.youtube.com/watch?v=KGSKpifrHeU" target="_blank">▶️ Watch recording</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🎥 Latest Regional Focus Group Recordings</h2>
+        <p>Regional Focus Groups (RFGs) provide an informal, peer-to-peer learning environment where forecasters and trainers discuss real-time weather events and explore the use of satellite data in operations.</p>
+        <p>As active communities of practice, these sessions foster collaboration and practical learning through real operational examples.</p>
+        <ul class="rfg-list">
+          <li><strong>Americas &amp; Caribbean (English &amp; Spanish)</strong> <a class="mini-link" href="https://rammb2.cira.colostate.edu/training/rmtc/focusgroup/" target="_blank">Watch recordings</a></li>
+          <li><strong>Australian VLab CoE (English)</strong> <a class="mini-link" href="https://learn.bom.gov.au/mod/page/view.php?id=43710" target="_blank">Watch recordings</a></li>
+          <li><strong>Indonesia VLab CoE (English)</strong> <a class="mini-link" href="https://www.youtube.com/@PusdiklatBMKG/videos" target="_blank">Watch recordings</a></li>
+          <li><strong>Middle East and North Africa (Arabic)</strong> <a class="mini-link" href="https://coemct.met.gov.om/course/view.php?id=98" target="_blank">Watch recordings</a></li>
+          <li><strong>African Quarterly Weather Briefings (English)</strong> <a class="mini-link" href="https://asmet.africa/live-weather-briefings/" target="_blank">Watch recordings</a></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>🌍 VLab Mirror Meetings – Key Takeaways</h2>
+        <p>The VLab Eastern and Western Group Mirror meetings (31 March &amp; 1 April 2026) brought together Centres of Excellence, satellite operators, and partners to align on priorities for satellite meteorology capacity development.</p>
+        <p>While satellite data availability continues to grow rapidly, <strong>capacity development remains the central challenge</strong> — particularly user skills, awareness, and infrastructure.</p>
+        <div class="spotlight">
+          <strong class="title">AI/ML in Forecasting</strong>
+          <p>Discussions highlighted the growing role of AI and machine learning. While its potential to change how data is interpreted and the role of forecasters is recognized, many questions remain.</p>
+          <p>Training must focus on interpreting AI outputs, understanding model limitations, and ensuring critical evaluation in operations.</p>
+        </div>
+
+        <h2>🛰️ Alignment with CM-16 Priorities</h2>
+        <p>Discussions confirmed strong alignment with the outcomes of the <strong>16th Session of Consultative Meetings on High-Level Policy on Satellite Matters (CM-16)</strong>, which emphasize:</p>
+        <ul>
+          <li>capacity development</li>
+          <li>AI/ML integration</li>
+          <li>modern, cloud-based data access</li>
+        </ul>
+        <p>CoEs are already actively addressing these priorities through their training activities, while continuing to face challenges related to skills, infrastructure, and resource availability.</p>
+        <p><strong>👉 This highlights the important role of VLab in bridging high-level policy priorities and operational training.</strong></p>
+        <div class="link-group">
+          <a class="button secondary" href="https://wmoomm.sharepoint.com/:b:/s/Collaboration/IQCdMTFqtP28RKShPIBZUCPkAQwK4vfSM4amXR9fIqKWVCE?e=N1TBE5" target="_blank">🔗 View slides</a>
+          <a class="button secondary" href="https://community.wmo.int/events/16th-session-of-consultative-meetings-high-level-policy-satellite-matters-cm-16" target="_blank">🛰️ More on CM-16</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>📢 Upcoming Training &amp; Activities</h2>
+        <p><span class="event-date">13 April – 1 May 2026</span><br/>Morocco &amp; Niger CoEs – Online Course on MTG Satellite Imagery Interpretation</p>
+        <p><span class="event-date">June 2026</span><br/>Indonesia CoE – Online RGB training<br/>Barbados CoE – Online severe weather operational testbed workshop<br/>China – Beijing CoE – Seminar on China-ASEAN Meteorological Remote Sensing</p>
+        <p><span class="event-date">29 June – 1 July 2026</span><br/>Morocco CoE – Face-to-face EUMETSAT data services and products for operational meteorological applications</p>
+        <p><span class="event-date">July 2026</span><br/>Brazil CoE – Online hotspot detection and wildfire analysis training</p>
+        <p><span class="event-date">August 2026</span><br/>China – Beijing CoE – Seminar on the Application of Meteorological Satellite Remote Sensing Technologies in "Belt and Road" Countries</p>
+        <p><span class="event-date">September 2026</span><br/>China (Nanjing) CoE – Seminar on remote sensing technology</p>
+        <p><a class="button" href="https://trainingevents.eumetsat.int/trui/" target="_blank">👉 See More Events</a></p>
+      </div>
+
+      <div class="section">
+        <h2>🔗 Useful Resources</h2>
+        <div class="resources">
+          <ul>
+            <li><strong>VLab Training Calendar:</strong> <a href="https://trainingevents.eumetsat.int/trui/" target="_blank">trainingevents.eumetsat.int/trui/</a></li>
+            <li><strong>WMO Global Campus:</strong> <a href="https://learningevents.wmo.int/" target="_blank">learningevents.wmo.int/</a></li>
+            <li><strong>CEOS Training Calendar:</strong> <a href="https://training.ceos.org/" target="_blank">training.ceos.org/</a></li>
+            <li><strong>Places to Find Training:</strong> <a href="https://eotecdev.net/learn/places-to-find-training/" target="_blank">eotecdev.net/learn/places-to-find-training/</a></li>
+            <li><strong>Australia CoE Moodle Platform:</strong> <a href="https://learn.bom.gov.au/course/view.php?id=1395" target="_blank">learn.bom.gov.au/course/view.php?id=1395</a> <span class="new-badge">NEW!</span></li>
+            <li><strong>Latest COMET MetEd Courses:</strong> <a href="https://www.comet.ucar.edu/our-latest-comet-meted-courses" target="_blank">comet.ucar.edu/our-latest-comet-meted-courses</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p><strong>✨ Thanks for reading VLab News!</strong></p>
+      <p>Strong community engagement continues to drive VLab’s impact in advancing global satellite meteorology capacity development.</p>
+      <div class="subscribe-box">
+        <div class="content">
+          <strong class="title">📬 Stay connected with VLab</strong>
+          
+          Want to keep up with the latest in satellite meteorology training?<br/><br/>
+          <strong>How to subscribe:</strong><br/>
+          1. Visit <a href="https://groups.wmo.int/" target="_blank">https://groups.wmo.int/</a><br/>
+          2. Search for <strong>VLabNewsletter@wmo.groups.int</strong><br/>
+          3. Request to join
+          
+          <br/><br/>
+          <strong>If you have any questions, please contact the VLab Office:</strong> sat-help-desk@wmo.int
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/VLab-315381015169398/" target="_blank" title="VLab on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/c/WMOCGMSVirtualLaboratory" target="_blank" title="VLab on YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="small-note">
+        VLab • WMO-CGMS Virtual Laboratory for Training and Education in Satellite Meteorology • Q1 2026
+      </div>
+    </div>
+  </div>
+</body>
+</html>
